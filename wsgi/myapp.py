@@ -23,6 +23,7 @@ def render_template(template_name, **context):
 
 class hello:
     def GET(self):
+        web.header('Content-Type', 'text/html')
         return render_template('hello.html')
 
 
