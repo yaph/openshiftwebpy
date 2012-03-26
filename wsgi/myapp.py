@@ -1,12 +1,12 @@
 import web
 
-urls = (
-  '/', 'hello')
+urls = ('/', 'hello')
 
 
 class hello:
     def GET(self):
-        return 'Hello, web!'
+        render = web.template.render('templates')
+        return render.hello()
 
 
 app = web.application(urls, globals(), autoreload=False)
