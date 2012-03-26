@@ -5,7 +5,7 @@ urls = ('/', 'hello')
 
 class hello:
     def GET(self):
-        render = web.template.render('templates')
+        render = web.template.render('templates/')
         return render.hello()
 
 
