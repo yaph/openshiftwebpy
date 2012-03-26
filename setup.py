@@ -6,5 +6,5 @@ setup(name='openshiftwebpy',
       author='Ramiro Gomez',
       author_email='www@ramiro.org',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['web.py']
+      install_requires=['web.py', 'Jinja2']
      )
