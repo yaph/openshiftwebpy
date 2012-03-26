@@ -1,10 +1,10 @@
 from setuptools import setup
 
-setup(name='YourAppName',
+setup(name='openshiftwebpy',
       version='1.0',
-      description='OpenShift App',
-      author='Your Name',
-      author_email='example@example.com',
+      description='OpenShift web.py example',
+      author='Ramiro Gómez',
+      author_email='www@ramiro.org',
       url='http://www.python.org/sigs/distutils-sig/',
-#      install_requires=['Django>=1.3'],
+      install_requires=['web.py'],
      )
