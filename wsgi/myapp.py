@@ -1,7 +1,8 @@
 import web
 
-render = web.template.render('templates/')
 urls = ('/', 'hello')
+app = web.application(urls, globals())
+render = web.template.render('templates/')
 
 
 class hello:
@@ -9,6 +10,5 @@ class hello:
         return render.hello()
 
 
-app = web.application(urls, globals(), autoreload=False)
 application = app.wsgifunc()
 
