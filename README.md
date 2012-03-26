@@ -1,1 +1,1 @@
-rhc app create -a "openshift-webpy" -t python-2.6 -l USERNAME
+rhc app create -a openshiftwebpy -t python-2.6 -l USERNAME
