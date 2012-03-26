@@ -6,7 +6,7 @@ urls = ('/', 'hello')
 class hello:
     def GET(self):
         render = web.template.render('templates')
-        return render.hello()
+        print render.hello()
 
 
 app = web.application(urls, globals(), autoreload=False)
